@@ -18,7 +18,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative bg-white py-20 md:py-37 bg-cover bg-center"
+      className="relative bg-white py-37 md:py-37 bg-cover bg-center"
       style={{
         backgroundImage: `url('/lightest blue waves.jpg')`, // <-- change this to your image
       }}
@@ -28,7 +28,7 @@ const HeroSection = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Announcement Badge */}
-        <div className="inline-flex items-center gap-2 rounded-2xl bg-white px-4 py-2 mb-5">
+        <div className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 mb-5">
           <span className="inline-flex items-center rounded-full bg-blue-600 px-4 py-1 text-base font-semibold text-white">
             New
           </span>

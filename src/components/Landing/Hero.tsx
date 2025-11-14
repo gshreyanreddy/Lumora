@@ -18,7 +18,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative bg-white py-20 md:py-22 bg-cover bg-center"
+      className="relative bg-white py-20 md:py-37 bg-cover bg-center"
       style={{
         backgroundImage: `url('/lightest blue waves.jpg')`, // <-- change this to your image
       }}
@@ -28,12 +28,12 @@ const HeroSection = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Announcement Badge */}
-        <div className="inline-flex items-center gap-2 rounded-2xl bg-slate-200 px-4 py-2 mb-6">
-          <span className="inline-flex items-center rounded-full bg-blue-600 px-3 py-1 text-base font-semibold text-white">
+        <div className="inline-flex items-center gap-2 rounded-2xl bg-white px-4 py-2 mb-5">
+          <span className="inline-flex items-center rounded-full bg-blue-600 px-4 py-1 text-base font-semibold text-white">
             New
           </span>
 
-          <span className="text-gray-700 text-base font-medium">
+          <span className="text-gray-900 text-base font-medium">
             Announcing our latest product launch
           </span>
         </div>
@@ -61,7 +61,7 @@ const HeroSection = () => {
           {/* Secondary Button */}
           <a
             href={secondaryLink}
-            className="inline-flex items-center justify-center px-8 py-4 border border-blue-600 text-blue-600 bg-white font-medium rounded-lg shadow-md hover:bg-blue-50 transition duration-300 ease-in-out transform hover:scale-105"
+            className="inline-flex items-center justify-center px-8 py-4 border border-blue-600 text-blue-600 bg-white font-medium rounded-lg shadow-md hover:bg-teal-200 transition duration-300 ease-in-out transform hover:scale-105"
           >
             {secondaryText}
           </a>

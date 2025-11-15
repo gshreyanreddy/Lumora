@@ -3,6 +3,8 @@ import Features from './Features';
 import About from './About';
 import Why from './Why';
 import How from './How';
+import End from './End';
+import Integration from './Integration';
 
 const Landing = () => {
   return (
@@ -12,6 +14,8 @@ const Landing = () => {
           <Features />
           <Why />
           <How/>
+          <Integration />
+          <End />
     </div>
   );
 };

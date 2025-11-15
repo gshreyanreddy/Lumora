@@ -19,7 +19,7 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="py-16 sm:py-24 bg-gray-50"
+      className="py-16 sm:py-24 bg-gradient-to-b from-[#F8F6F1] to-[#EDE9DD]"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}

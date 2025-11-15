@@ -1,3 +1,151 @@
+// import React from "react";
+
+// const FeaturesSection: React.FC = () => {
+//   return (
+//     <section
+//       id="features"
+//       className="py-16 sm:py-24 bg-gray-50 overflow-hidden"
+//     >
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//         {/* Main Heading */}
+//         <div className="text-center mb-16">
+//           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900">
+//             Lumora AI Features
+//           </h1>
+//           <p className="mt-4 text-xl text-gray-600">
+//             The intelligent co-pilot for financial services professionals.
+//           </p>
+//         </div>
+
+//         {/* 1. Three-Column Layout (Features 5, 6, 8) - Hardcoded */}
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+//           {/* Feature 5: Predictive Lead Scoring */}
+//           <div className="p-6 bg-white rounded-xl shadow-lg border border-gray-100 flex flex-col">
+//             <h3 className="text-xl font-bold text-gray-900 mb-2">Predictive Lead Scoring</h3>
+//             <p className="text-sm font-semibold text-blue-600 mb-4">Lumora doesn’t just organize leads — it ranks them.</p>
+//             <p className="text-gray-600 text-base mb-3">
+//               Using behavior signals and public data, it predicts which prospects are most likely to convert, helping you focus your time where it matters most.
+//             </p>
+//           </div>
+
+//           {/* Feature 6: Compliance Automation */}
+//           <div className="p-6 bg-white rounded-xl shadow-lg border border-gray-100 flex flex-col">
+//             <h3 className="text-xl font-bold text-gray-900 mb-2">Compliance Automation</h3>
+//             <p className="text-sm font-semibold text-blue-600 mb-4">Never miss another regulatory requirement.</p>
+//             <p className="text-gray-600 text-base mb-3">
+//               Lumora tracks all compliance tasks — KYC checks, policy renewals, AML verifications — and color-codes their status (Green / Amber / Red).
+//             </p>
+//             <p className="text-gray-600 text-base mb-3">
+//               You’ll know exactly what needs action, and when.
+//             </p>
+//           </div>
+
+//           {/* Feature 8: 24/7 Lead Capture */}
+//           <div className="p-6 bg-white rounded-xl shadow-lg border border-gray-100 flex flex-col">
+//             <h3 className="text-xl font-bold text-gray-900 mb-2">24/7 Lead Capture</h3>
+//             <p className="text-sm font-semibold text-blue-600 mb-4">Even while you’re offline, Lumora works.</p>
+//             <p className="text-gray-600 text-base mb-3">
+//               If a prospect fills a form or calls after hours, Lumora creates their profile, asks qualifying questions, calculates ROI, and schedules next steps — all before you start your morning.
+//             </p>
+//           </div>
+//         </div>
+
+//         {/* 2. Alternating Layout (Remaining Features) - Hardcoded */}
+//         <div className="divide-y divide-gray-200">
+//           {/* Feature 1: Voice & Text Commands (Index 0 - Image Right) */}
+//           <div className="py-12 lg:py-20 border-b border-gray-100 last:border-b-0">
+//             <div className="flex flex-col md:flex-row-reverse items-center gap-8 lg:gap-16">
+//               {/* Image/Placeholder Column */}
+//               <div className="w-full md:w-1/2">
+//                 <div className="w-full max-w-full rounded-xl overflow-hidden mx-auto">
+//                   <img
+//                     src="/voice cmd.png"
+//                     alt="Voice & Text Commands"
+//                     className="w-full h-64 sm:h-80 lg:h-96 object-contain"
+//                   />
+//                 </div>
+//               </div>
+
+//               {/* Content Column */}
+//               <div className="w-full md:w-1/2">
+//                 <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Voice & Text Commands</h2>
+//                 <p className="text-xl font-semibold text-blue-600 mb-6">Talk or type — Lumora listens.</p>
+
+//                 <p className="text-lg text-gray-700 mb-4">
+//                   Say things like: “Add new lead: FinCore Lending, processing $30M annually.” or “Schedule demo with TechBank next Tuesday.”
+//                 </p>
+//                 <p className="text-lg text-gray-700 mb-4">
+//                   Lumora instantly creates the lead profile, gathers company insights, and schedules tasks automatically. No typing, no searching, no switching apps.
+//                 </p>
+//               </div>
+//             </div>
+//           </div>
+
+//           {/* Feature 2: AI-Powered Task Automation (Index 1 - Image Left) */}
+//           <div className="py-12 lg:py-20 border-b border-gray-100 last:border-b-0">
+//             <div className="flex flex-col md:flex-row items-center gap-8 lg:gap-16">
+//               {/* Image/Placeholder Column */}
+//               <div className="w-full md:w-1/2 order-1 md:order-1">
+//                 <div className="w-full max-w-full rounded-xl overflow-hidden mx-auto">
+//                   <img
+//                     src="/task auto.png"
+//                     alt="AI-Powered Task Automation"
+//                     className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl"
+//                   />
+//                 </div>
+//               </div>
+
+//               {/* Content Column */}
+//               <div className="w-full md:w-1/2">
+//                 <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">AI-Powered Task Automation</h2>
+//                 <p className="text-xl font-semibold text-blue-600 mb-6">Lumora acts like your digital co-pilot — handling repetitive tasks behind the scenes.</p>
+
+//                 <p className="text-lg text-gray-700 mb-4">You stay in control — just review and approve.</p>
+
+//                 <ul className="space-y-3 mt-6 text-lg text-gray-700 list-disc list-inside">
+//                   <li>Generates and sends follow-up emails</li>
+//                   <li>Schedules client callbacks</li>
+//                   <li>Updates CRM records automatically</li>
+//                   <li>Prepares proposals and compliance packets</li>
+//                 </ul>
+//               </div>
+//             </div>
+//           </div>
+
+//           {/* Feature 3: Meeting Recording & Transcription (Index 2 - Image Right) */}
+//           <div className="py-12 lg:py-20 border-b border-gray-100 last:border-b-0">
+//             <div className="flex flex-col md:flex-row-reverse items-center gap-8 lg:gap-16">
+//               {/* Image/Placeholder Column */}
+//               <div className="w-full md:w-1/2">
+//                 <div className="w-full max-w-full rounded-xl overflow-hidden mx-auto">
+//                   <img
+//                     src="/recording.png"
+//                     alt="Meeting Recording & Transcription"
+//                     className="w-full h-64 sm:h-80 lg:h-96 object-contain rounded-2xl"
+//                   />
+//                 </div>
+//               </div>
+
+//               {/* Content Column */}
+//               <div className="w-full md:w-1/2">
+//                 <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Meeting Recording & Transcription</h2>
+//                 <p className="text-xl font-semibold text-blue-600 mb-6">Capture every client conversation — online or in person.</p>
+
+//                 <p className="text-lg text-gray-700 mb-4">Lumora transcribes meetings, identifies key pain points, extracts action items, and logs everything neatly into your client record.</p>
+//                 <p className="text-lg text-gray-700 mb-4">Examples: “Send proposal by Friday” or “Needs updated PCI certificate” — never slips through the cracks again.</p>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default FeaturesSection;
+
+
+
 // --- Main Features Section Component ---
 const FeaturesSection = () => {
   // All data arrays and map functions have been removed and replaced with static JSX
@@ -78,11 +226,11 @@ const FeaturesSection = () => {
               
               {/* Image/Placeholder Column */}
               <div className="w-full md:w-1/2 ml-20">
-  <div className="rounded-xl overflow-hidden">
+  <div className="w-full max-w-full rounded-xl overflow-hidden mx-auto">
     <img
       src="/task auto.png"  // your image path
       alt="Feature 1"
-      className="w-3/4 h-3/4 object-cover rounded-2xl"
+      className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl"
     />
   </div>
 </div>
@@ -95,17 +243,17 @@ const FeaturesSection = () => {
                 
                 <p className="text-lg text-gray-700 mb-4">You stay in control — just review and approve.</p>
 
-                <ul className="space-y-3 mt-6 text-lg text-gray-700">
-                  <li className="flex items-start">
+                <ul className="ml-5 space-y-3 mt-6 text-lg text-gray-700 list-disc">
+                  <li className="items-start">
                     <span>Generates and sends follow-up emails</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className=" items-start">
                     <span>Schedules client callbacks</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className=" items-start">
                     <span>Updates CRM records automatically</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className=" items-start">
                     <span>Prepares proposals and compliance packets</span>
                   </li>
                 </ul>

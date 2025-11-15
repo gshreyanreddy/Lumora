@@ -61,7 +61,7 @@ const FloatingNavbar = () => {
             <div className="flex items-center space-x-2 sm:space-x-4">
               {/* CTA Button - Dark color for contrast, matching the image */}
               <a
-                href="#demo"
+                href="https://tally.so/r/aQQ59y"
                 className="inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 border border-transparent text-sm sm:text-md font-medium rounded-lg shadow-sm text-white bg-gray-900 hover:bg-gray-700 transition duration-150 ease-in-out"
               >
                 Book a Demo

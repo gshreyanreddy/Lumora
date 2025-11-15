@@ -3,7 +3,6 @@ interface NavItem {
   href: string;
 }
 
-
 import { useState } from 'react';
 
 const FloatingNavbar = () => {
@@ -13,9 +12,10 @@ const FloatingNavbar = () => {
     setIsOpen(!isOpen);
   };
   const navItems: NavItem[] = [
+    { name: 'About Us', href: '#about' },
     { name: 'Features', href: '#features' },
-    { name: 'ROI Impact', href: '#roi-impact' },
-    { name: 'Compliance', href: '#compliance' },
+    { name: 'Why Lumora', href: '#why' },
+    { name: 'How It Works', href: '#how' },
   ];
 
   return (
@@ -49,7 +49,7 @@ const FloatingNavbar = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-gray-600 hover:text-blue-600 text-sm md:text-md font-medium transition duration-150 ease-in-out"
+                    className="nav-link text-gray-900 hover:text-blue-600 text-sm md:text-md font-medium transition duration-150 ease-in-out"
                   >
                     {item.name}
                   </a>

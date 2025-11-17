@@ -30,7 +30,7 @@ const IntegrationBadge: React.FC<{ src: string; alt: string; title?: string }> =
 
 const Integration: React.FC = () => {
   return (
-    <section className="bg-white py-16 md:py-20 overflow-hidden">
+    <section className="bg-black py-16 md:py-20 overflow-hidden">
       <div className="mx-auto max-w-5xl px-6">
         <div className="relative mx-auto w-fit">
           {/* Decorative radial vignette (light) */}
@@ -77,10 +77,10 @@ const Integration: React.FC = () => {
 
         {/* Heading + Blurb */}
         <div className="mx-auto mt-6 max-w-lg space-y-4 text-center">
-          <h2 className="text-3xl font-semibold md:text-4xl text-slate-900">
+          <h2 className="text-3xl font-semibold md:text-4xl text-white">
             One-Click sync with your sales tools
           </h2>
-          <p className="text-gray-600 font-medium">
+          <p className="text-slate-300 font-medium">
             Instantly export high-intent prospects and signals into your CRM.
             Connect AI-scored companies and real-time signals directly to Salesforce, HubSpot, and beyond.
           </p>

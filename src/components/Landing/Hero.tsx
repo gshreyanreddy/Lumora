@@ -11,7 +11,7 @@ const HeroSection = () => {
     "Lumora is an AI-powered platform that automates lead management, client follow-ups, and compliance workflows — saving hours daily while ensuring 100% audit readiness.";
 
   const ctaText = "Request a Demo";
-  const ctaLink = "#demo";
+  const ctaLink = "https://tally.so/r/aQQ59y";
 
   const secondaryText = "Explore Features";
   const secondaryLink = "#features";

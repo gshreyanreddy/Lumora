@@ -151,7 +151,7 @@ const FeaturesSection = () => {
   // All data arrays and map functions have been removed and replaced with static JSX
 
   return (
-    <section className="py-16 sm:py-24 bg-gray-50 overflow-hidden" id="features">
+    <section className="py-16 sm:py-24 bg-linear-to-b from-[#F8F6F1] to-[#EDE9DD] overflow-hidden" id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Heading */}
@@ -225,8 +225,8 @@ const FeaturesSection = () => {
             <div className="flex flex-col md:flex-row items-center gap-8 lg:gap-16">
               
               {/* Image/Placeholder Column */}
-              <div className="w-full md:w-1/2 ml-20">
-  <div className="w-full max-w-full rounded-xl overflow-hidden mx-auto">
+              <div className="w-full md:w-1/2 mr-2 md:ml-20 ">
+  <div className="w-full max-w-full rounded-xl overflow-hidden mx-auto ">
     <img
       src="/task auto.png"  // your image path
       alt="Feature 1"

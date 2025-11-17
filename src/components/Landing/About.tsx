@@ -17,14 +17,7 @@ const About = () => {
     'From recording meetings to generating proposals and tracking compliance, Lumora automates every routine step — turning hours of manual work into minutes of review.';
 
   return (
-    <motion.section
-      id="about"
-      className="py-16 sm:py-24 bg-gradient-to-b from-[#F8F6F1] to-[#EDE9DD]"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.8 }}
-    >
+    <section id="about" className="py-16 sm:py-24 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-12 lg:items-center">
           {/* Left Column: Main Text Content */}
@@ -74,7 +67,7 @@ const About = () => {
           </motion.div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 
